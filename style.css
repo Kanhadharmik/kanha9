@@ -1,0 +1,407 @@
+/* general Settings */
+
+body {
+  font-size: 14px;
+  font-family: 'Inter', sans-serif;
+  display: grid;
+  margin: 0;
+  text-align: left;
+  color: white;
+  background-color: hsl(230, 17%, 14%);
+  font-weight: 400;
+}
+
+/* Header */
+/* Dark Theme */
+
+.Dark-theme {
+  background-color: hsl(232, 19%, 15%);
+  padding: 25px 0 140px;
+  font-weight: 700;
+}
+
+h1 {
+  padding-left: 150px;
+  padding-top: 25px;
+  margin: 0;
+}
+
+.sub-heading {
+  padding-left: 150px;
+  color: hsl(228, 34%, 66%);
+  margin-top: 5px;
+}
+
+.mode {
+  position: absolute;
+  right: 80px;
+  width: 75px;
+  margin-top: 8px;
+}
+
+/* Toggle Button */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 65px;
+  height: 33px;
+  float: right;
+  top: 30px;
+  right: 150px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-transition: .4s;
+  transition: .4s;
+  background-image: linear-gradient(to right,hsl(210, 78%, 56%),hsl(146, 68%, 55%));
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 23px;
+  width: 23px;
+  left: 7px;
+  bottom: 5px;
+  background-color: hsl(230, 17%, 14%);
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+
+input:checked + .slider {
+  background-image: linear-gradient(#ccc,#ccc);
+}
+
+
+input:focus + .slider {
+  box-shadow: 0 0 1px white;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 80px;
+}
+
+.slider.round:before {
+  border-radius: 70%;
+}
+
+/* Overal Section */
+
+.overall-boxes {
+  display: flex;
+  text-align: center;
+  padding-left: 150px;
+  height: 165px;
+}
+
+.boxes {
+  padding: 0 55px;
+  border-radius: 5px;
+  background-color: hsl(228, 28%, 20%);
+  height: 225px;
+  z-index: +1;
+  position: relative;
+  bottom: 100px;
+  cursor: pointer;
+}
+
+i {
+  padding-right: 10px;
+  position: relative;
+  top: 4px;
+}
+
+.subscribers {
+  font-size: 75px;
+  margin: 10px 0 0;
+}
+
+.subscribers-heading {
+  margin: 0px 0 25px;
+  letter-spacing: 8px;
+}
+
+.contact, .subscribers-heading{
+  color: hsl(228, 34%, 66%);
+}
+
+.twitter {
+  margin: 0 25px;
+  border-top: 4px solid hsl(203, 89%, 53%);
+}
+
+.instagram {
+  margin-right: 25px;
+  border-top: 4px solid hsl(37, 97%, 70%);
+}
+
+.facebook {
+  border-top: 4px solid hsl(208, 92%, 53%);
+}
+
+.youtube {
+  border-top: 4px solid hsl(348, 97%, 39%);
+}
+
+/* Icons */
+
+.fb {
+   color: hsl(208, 92%, 53%);
+}
+
+.tw {
+  color: hsl(203, 89%, 53%);
+}
+
+.insta {
+  color: hsl(329, 70%, 58%);
+}
+
+.ut {
+  color: hsl(348, 97%, 39%);
+}
+
+
+.fa-caret-up{
+  color: hsl(163, 72%, 41%);
+}
+
+.fa-caret-down {
+  color: hsl(356, 69%, 56%);
+}
+
+/* Overview Section */
+
+.overview-heading {
+  font-size: 24px;
+  margin-bottom: 30px;
+  padding-top: 0;
+}
+
+.overview-boxes {
+  display: flex;
+}
+
+.details {
+  display: flex;
+  background-color: hsl(228, 28%, 20%);
+  border-radius: 8px;
+  padding: 10px 15px 0px 25px;
+  height: 125px;
+  cursor: pointer;
+}
+
+.details-1 {
+  line-height: 1.5;
+  color: hsl(228, 34%, 66%);
+}
+
+.numbers {
+  font-size: 28px;
+  color: white;
+  font-weight: 700;
+}
+
+.details-2 {
+  margin-left: 125px;
+  line-height: 4;
+  text-align: right;
+}
+
+.box-1 {
+  margin: 0 25px 25px 150px;
+}
+
+.box-2 {
+  margin-right: 25px;
+}
+
+.box-4 {
+  margin: 0 25px 25px;
+}
+
+.facebook-likes {
+  margin-right: 45px;
+}
+
+.insta-content {
+  margin-right: -25px;
+}
+
+.twitter-likes {
+  margin-right: 18px;
+}
+
+.yt-likes {
+  margin-right: 12px;
+}
+
+
+/* Footer */
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.boxes:hover,
+.details:hover,
+.boxes:active
+.details:active {
+  background-color: hsl(228, 28%, 25%)
+}
+
+/* Light Theme */
+
+.light-header {
+  background-color: hsl(225, 100%, 98%);
+  color: hsl(230, 17%, 14%);
+  font-weight: 700;
+}
+
+.light-section {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(228, 12%, 44%);
+  font-weight: 400;
+}
+
+.light-boxes {
+  background-color: hsl(227, 47%, 96%);
+}
+
+.light-boxes:hover {
+  background-color: hsl(227, 47%, 90%)
+}
+
+.light-numbers {
+  color: hsl(230, 17%, 14%);
+  font-weight: 700;
+}
+
+/* Media Queries */
+
+@media (max-width: 380px) {
+
+  .Dark-theme {
+    padding-bottom: 190px;
+  }
+
+  h1 {
+    padding-left: 25px;
+    padding-top: 20px;
+    margin: 0;
+    font-size: 18px;
+  }
+
+  .sub-heading {
+    padding-left: 25px;
+    margin-top: 5px;
+    font-size: 10px;
+  }
+
+
+  .switch {
+  position: absolute;
+  width: 60px;
+  height: 34px;
+  top:125px;
+  left: 240px;
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+  .mode {
+    margin-right: 120px;
+    font-size: 13px;
+  }
+
+  .overall-boxes{
+    display: contents;
+  }
+
+  .boxes {
+    width: 32%;
+    margin-left: 25px;
+    margin-top: 15px;
+    bottom: 75px;
+  }
+
+  .twitter, .instagram {
+    margin: 35px 25px;
+  }
+
+
+  .overview-heading {
+    font-size: 20px;
+  }
+
+  .overview-boxes {
+    display: contents;
+  }
+
+  .details {
+    width: 47%;
+    margin: 40px auto -20px 25px;
+    bottom: 75px;
+  }
+
+  .details-2 {
+    margin-left: 100px;
+    text-align: right;
+  }
+
+  .mb-insta {
+    margin-right: -15px;
+  }
+
+  .mb-twitter {
+    margin-left: 120px;
+  }
+
+  .yt-likes {
+    margin-right: 30px;
+  }
+
+  .mb-yt {
+    margin-right: 10px;
+  }
+
+  .attribution{
+    margin-top: 40px;
+    text-align: left;
+    padding-left: 20px;
+  }
+
+}
